@@ -16,7 +16,7 @@ class _SplashscrrenState extends State<Splashscrren> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 8),
+        const Duration(seconds: 4),
         () => Navigator.push(context,
             MaterialPageRoute(builder: (context) => const HomePage())));
   }
@@ -24,8 +24,8 @@ class _SplashscrrenState extends State<Splashscrren> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color(0xffe3342f),
-        child: Lottie.network(
-            'https://assets9.lottiefiles.com/private_files/lf30_wemstiyo.json'));
+      color: const Color(0xffe3342f),
+      child: Lottie.asset('assets/lpttie.json'),
+    );
   }
 }
